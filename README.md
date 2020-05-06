@@ -2,6 +2,8 @@
 
 Below are the steps to reproduce the primary results from Sean MacAvaney, Arman Cohan, and Nazli Goharian. 2020. SLEDGE: A Simple Yet Effective Baseline for  Coronavirus Scientific Knowledge Search. arXiv. [pdf](https://arxiv.org/pdf/2005.02365.pdf)
 
+SLEDGE topped the [TREC-COVID leaderboard](https://docs.google.com/spreadsheets/d/1NOu3ZVNar_amKwFzD4tGLz3ff2yRulL3Tbg_PzUSR_U/edit#gid=1068033221) in Round 1 of TREC-COVID.
+
 The code to reproduce the paper is incorporated into [OpenNIR](https://github.com/Georgetown-IR-Lab/OpenNIR).
 Refer to https://opennir.net/ go get started.
 
