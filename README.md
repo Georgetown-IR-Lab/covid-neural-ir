@@ -39,6 +39,17 @@ If you want to train on the medical-related subset of MS-MARCO, configure your s
 
  - setting `train_ds.subset=train_med`
 
+## Trained Models
+
+If you'd rather not train the models yourself:
+
+| File | Description | MD5 | Link |
+| ------------- | ------------- | ------------- | ------------- |
+| `sledge.p` (513MB) | SLEDGE model trained on MS-MARCO | `3195b81e380a8efb5df1dd9aafdcb12b` | [Google Drive][sledge.p]  |
+| `sledge-med.p` (513MB) | SLEDGE model trained on medical subset of MS-MARCO | `0660bf152f05e75356b78bc2eb6e7b82` | [Google Drive][sledge-med.p]  |
+
+*([Tip for downloading large Google Drive files using wget][wget])*
+
 ## FAQ
 
 **I want to test this on my own queries!**
@@ -63,4 +74,8 @@ If you use this work, please cite:
 }
 ```
 
-Last Updated: May 6, 2020
+Last Updated: May 21, 2020
+
+[wget]: https://medium.com/@acpanjan/download-google-drive-files-using-wget-3c2c025a8b99
+[sledge.p]: https://drive.google.com/file/d/1ALpDORiFD_9wTp3Zm3Q_A-9Fg_gqj5GG/view?usp=sharing
+[sledge-med.p]: https://drive.google.com/file/d/1EWcnp23ei4i1Er6sfCok5STOUGDZnaMR/view?usp=sharing
