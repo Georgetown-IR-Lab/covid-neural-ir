@@ -39,6 +39,16 @@ If you want to train on the medical-related subset of MS-MARCO, configure your s
 
  - setting `train_ds.subset=train_med`
 
+## FAQ
+
+**I want to test this on my own queries!**
+
+OpenNIR is designed for experiments with standard benchmarks. But it's possible (albeit a little hacky) to add additional queries.
+
+Just make a new file `~/data/onir/datasets/covid/myqueries.tsv`. Ths TSV file contains the text of the queries in the where each line is the following format: `{qid}\t{qtype}\t{qtext}` -- where `{qid}` is the query ID, `{qtype}` is the type of the query -- e.g., `query` (keyword query), `quest` (question), `narr` (narrative), or whatever you like, really -- and `{qtext}` is is the textual content of the query. You'll also need a dummy standard TREC qrels file: `~/data/onir/datasets/covid/myqueries.qrels`. This needs to exist and have at least one record in it, but it can be a dummy record like: `1 0 docid 0`. (Note that if you use a dummy file here, the evaluation OpenNIR provides about the run is useless.)
+
+Then, to instruct OpenNIR to use your custom queries, use `test_ds.subset=myqueries-query` -- where `myqueries` is the name of the file and `query` is the `{qtype}`. If you want to use the same queries for initial retrieval and re-ranking, you'll need to set `test_ds.bs_override=`.
+
 ## Citation
 
 If you use this work, please cite:
