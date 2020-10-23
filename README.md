@@ -39,9 +39,9 @@ If you want to train on the medical-related subset of MS-MARCO, configure your s
 
  - setting `train_ds.subset=train_med`
 
-## Med-MARCO
+## Med-MARCO Dataset
 
-The medical subset of MS-MARCO was constructed by filtering queries that have terms found in [MedSyn](http://ir.cs.georgetown.edu/downloads/ECIR2013-ADRTrace.pdf), a lexicon of layman and expert medical terminology. The full list of MS-MARCO training IDs that match the filter are found [here](https://github.com/Georgetown-IR-Lab/covid-neural-ir/blob/master/med-msmarco-train.txt).
+The medical subset of the MS-MARCO dataset was constructed for SLEDGE by filtering queries that have terms found in [MedSyn](http://ir.cs.georgetown.edu/downloads/ECIR2013-ADRTrace.pdf), a lexicon of layman and expert medical terminology. The full list of MS-MARCO training IDs that match the filter are found [here](https://github.com/Georgetown-IR-Lab/covid-neural-ir/blob/master/med-msmarco-train.txt).
 
 Note that we removed some terms frequently yielded false matches from MedSyn (e.g., gas).
 
